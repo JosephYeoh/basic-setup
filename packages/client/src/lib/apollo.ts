@@ -11,8 +11,7 @@ const client = new ApolloClient({
 	link,
 	cache,
 	queryDeduplication: false,
-	ssrMode:true,
+	ssrMode: true,
 });
-
 
 export default client;
