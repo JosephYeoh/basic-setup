@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
+    "start": "next dev -p 3000",
     "build": "next build",
     "format": "prettier-eslint --write \"$PWD/{,!(node_modules)/**/}*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "start": "next start"
+    "prod-start": "next start"
   },
   "dependencies": {
     "@apollo/client": "^3.0.2",

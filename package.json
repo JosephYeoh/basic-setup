@@ -5,6 +5,7 @@
 		"packages/*"
 	],
 	"scripts": {
+		"start": "concurrently \"yarn common gql -w\" \"yarn server start\"  \"yarn client start\"",
 		"server": "cd packages/server && yarn",
 		"client": "cd packages/client && yarn",
 		"common": "cd packages/common && yarn"
