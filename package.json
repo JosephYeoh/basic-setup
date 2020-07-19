@@ -9,14 +9,14 @@
 		"server": "cd packages/server && yarn",
 		"client": "cd packages/client && yarn",
 		"common": "cd packages/common && yarn"
-
 	},
 	"dependencies": {
-		"concurrently": "^5.2.0"
+		"concurrently": "^5.2.0",
+		"husky": "^4.2.5"
 	},
 	"husky": {
-    "hooks": {
-      "pre-push": "yarn client format && yarn client eslint && yarn server format && yarn server eslint"
-    }
-  }
+		"hooks": {
+			"pre-push": "yarn client format && yarn client eslint && yarn server format && yarn server eslint"
+		}
+	}
 }
