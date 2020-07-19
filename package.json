@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "basic-setup",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"server": "cd packages/server && yarn",
+		"client": "cd packages/client && yarn",
+		"common": "cd packages/common && yarn"
+
+	},
+	"dependencies": {
+		"concurrently": "^5.2.0"
+	}
+}

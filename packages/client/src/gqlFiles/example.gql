@@ -1,0 +1,10 @@
+query GetAllArticles{
+	articles{
+		...GetAllArticlesData
+	}
+}
+
+fragment GetAllArticlesData on Article{
+	title
+	author
+}
