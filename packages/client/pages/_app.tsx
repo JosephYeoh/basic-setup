@@ -1,7 +1,8 @@
 import { NextComponentType, NextPageContext } from 'next';
 import App from 'next/app';
 import React from 'react';
-import {ApolloProvider} from '@apollo/client';
+
+import { ApolloProvider } from '@apollo/client';
 
 import apolloClient from '../src/lib/apollo';
 
