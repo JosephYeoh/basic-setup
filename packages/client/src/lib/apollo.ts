@@ -4,14 +4,14 @@ const cache = new InMemoryCache();
 const link = new HttpLink({
   uri: 'http://localhost:4000/',
   credentials: 'include',
-  fetch: process.browser ? undefined : fetch,
+  fetch: process.browser ? undefined : fetch
 });
 
 const client = new ApolloClient({
   link,
   cache,
   queryDeduplication: false,
-  ssrMode: true,
+  ssrMode: true
 });
 
 export default client;
