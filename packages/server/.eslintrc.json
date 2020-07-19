@@ -16,12 +16,31 @@
         "@typescript-eslint",
         "prettier"
     ],
+    // "settings": {
+    //     "import/resolver":{
+    //         "webpack":{
+    //             "node":{
+    //                 "paths":["src"]
+    //             }
+    //         }
+    //     }
+    // },
     "rules": {
         "prettier/prettier": [1],
+        
         "import/prefer-default-export": [0],
         "no-unused-vars": "off",
         "no-empty-pattern": "off",
         "import/no-dynamic-require": [0],
-        "global-require":"off"
+        "global-require":"off",
+        "import/no-unresolved":[0],
+        "import/extensions": [0],
+        "arrow-parens": "off",
+        "no-multi-spaces": "warn",
+        "object-curly-spacing": "warn",
+        "no-nested-ternary": "off",
+        "max-len": "warn",
+        "operator-linebreak": "off",
+        "array-callback-return": [0]
     }
 }

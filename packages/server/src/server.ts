@@ -1,6 +1,11 @@
 import { readFileSync } from 'fs';
 import glob from 'glob';
 import { ApolloServer, gql } from 'apollo-server';
+import { env } from './data/util/config';
+
+Object.keys(env).map((key) => {
+  process.env[key] = env[key];
+});
 
 // Collect all *.schema.gql files for type defintion
 const typeDefs = glob

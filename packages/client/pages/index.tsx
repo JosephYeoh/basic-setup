@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { env } from 'src/util/config';
 
 export default function Home() {
   return (

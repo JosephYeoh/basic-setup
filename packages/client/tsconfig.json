@@ -20,7 +20,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-			"@common/*": ["../common/src/*"],
+      "@common/*": ["../common/src/*"],
+      "src/*":["./src/*"]
 		},
   },
   "exclude": [
@@ -29,6 +30,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx", "next.config.js"
   ]
 }

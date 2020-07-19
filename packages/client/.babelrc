@@ -8,9 +8,8 @@
       {
 				"root": ["."],
 				"alias": {
-						"@common": "../common/src",
-						"@static": "../static",
-						"src": "./src"
+						"@common/*": "../common/src/*",
+						"src/*": "./src/*"
         }
       }
     ]
