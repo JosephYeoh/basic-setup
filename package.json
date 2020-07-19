@@ -13,5 +13,10 @@
 	},
 	"dependencies": {
 		"concurrently": "^5.2.0"
-	}
+	},
+	"husky": {
+    "hooks": {
+      "pre-push": "yarn client format && yarn client eslint && yarn server format && yarn server eslint"
+    }
+  }
 }

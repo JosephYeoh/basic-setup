@@ -36,11 +36,5 @@
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "prettier-eslint-cli": "^5.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn format && yarn eslint",
-      "...": "..."
-    }
   }
 }
