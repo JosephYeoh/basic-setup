@@ -13,7 +13,6 @@ const books = [
 export const Resolvers = {
   Query: {
     books: (_, {}, ctx) => {
-      console.log(process.env);
       return books;
     }
   }
