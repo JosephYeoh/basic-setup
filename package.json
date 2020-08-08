@@ -8,7 +8,11 @@
 		"start": "concurrently \"yarn common gql -w\" \"yarn server start\"  \"yarn client start\"",
 		"server": "cd packages/server && yarn",
 		"client": "cd packages/client && yarn",
-		"common": "cd packages/common && yarn"
+		"common": "cd packages/common && yarn",
+		"tsc": "yarn common gql && yarn client tsc && yarn server tsc",
+		"format": "yarn client format && yarn server format",
+		"lint": "yarn client eslint && yarn server eslint",
+		"tidy" : "yarn format && yarn lint && yarn tsc"
 	},
 	"dependencies": {
 		"concurrently": "^5.2.0"
@@ -18,7 +22,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-push": "yarn client format && yarn client eslint && yarn server format && yarn server eslint"
+			"pre-commit": "yarn tidy"
 		}
 	}
 }

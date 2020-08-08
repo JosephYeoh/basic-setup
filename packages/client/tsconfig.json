@@ -1,28 +1,18 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src",
+		"paths": {
+			"@common/*": ["../../common/src/*"],
+			"src/*":["./src"]
+		},
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@common/*": ["../common/src/*"],
-      "src/*":["./src/*"]
-		},
+    "jsx": "preserve"
   },
   "exclude": [
     "node_modules"

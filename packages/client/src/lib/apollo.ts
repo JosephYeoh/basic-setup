@@ -1,4 +1,5 @@
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { env } from 'util/config';
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
@@ -7,11 +8,14 @@ const link = new HttpLink({
   fetch: process.browser ? undefined : fetch
 });
 
-const client = new ApolloClient({
+// Setting process.env
+Object.keys(env).map((key) => {
+  process.env[key] = env[key];
+});
+
+export const client = new ApolloClient({
   link,
   cache,
   queryDeduplication: false,
   ssrMode: true
 });
-
-export default client;

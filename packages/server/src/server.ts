@@ -3,6 +3,7 @@ import glob from 'glob';
 import { ApolloServer, gql } from 'apollo-server';
 import { env } from './data/util/config';
 
+// Setting process.env
 Object.keys(env).map((key) => {
   process.env[key] = env[key];
 });

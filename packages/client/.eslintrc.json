@@ -5,7 +5,6 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
         "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -22,31 +21,29 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": [1],
-        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".ts", ".tsx"] }],
-        "react/jsx-one-expression-per-line": [0],
-        "react/jsx-props-no-spreading": [0],
-        "react/prop-types": [0],
-        
-        "import/prefer-default-export": [0],
-        "no-unused-vars": "off",
-        "no-empty-pattern": "off",
-        "import/no-dynamic-require": [0],
-        "global-require":"off",
-        "import/no-unresolved":[0],
-        "import/extensions": [0],
-        "arrow-parens": "off",
-        "no-multi-spaces": "warn",
-        "object-curly-spacing": "warn",
-        "no-nested-ternary": "off",
-        "max-len": "warn",
-        "operator-linebreak": "off",
-        "array-callback-return": [0]
-
-    },
-    "settings": {
-        "react": {
-            "version": "detetect"
-        }
+        "react/prop-types": [0]
     }
+
 }
+// ? airbnb rules i think should be disabled if we wanna follow airbnb style
+// "rules": {
+//     "prettier/prettier": [1],
+//     "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".ts", ".tsx"] }],
+//     "react/jsx-one-expression-per-line": [0],
+//     "react/jsx-props-no-spreading": [0],
+//     "react/prop-types": [0],
+//     "import/prefer-default-export": [0],
+//     "no-unused-vars": "off",
+//     "no-empty-pattern": "off",
+//     "import/no-dynamic-require": [0],
+//     "global-require":"off",
+//     "import/no-unresolved":[0],
+//     "import/extensions": [0],
+//     "arrow-parens": "off",
+//     "no-multi-spaces": "warn",
+//     "object-curly-spacing": "warn",
+//     "no-nested-ternary": "off",
+//     "max-len": "warn",
+//     "operator-linebreak": "off",
+//     "array-callback-return": [0]
+// },
