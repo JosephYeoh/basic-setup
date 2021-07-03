@@ -3,7 +3,7 @@ This is a basic setup i've created. It lacks any front-end styling/component lib
 
 ### Stack
 - Mobile-app
-  - react-native
+  - React-native
   - Expo
 
 - Front-end
