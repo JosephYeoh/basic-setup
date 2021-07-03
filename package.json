@@ -12,13 +12,13 @@
 		"tsc": "yarn common gql && yarn client tsc && yarn server tsc",
 		"format": "yarn client format && yarn server format",
 		"lint": "yarn client eslint && yarn server eslint",
-		"tidy" : "yarn format && yarn lint && yarn tsc"
+		"tidy": "yarn format && yarn lint && yarn tsc"
 	},
 	"dependencies": {
-		"concurrently": "^5.2.0"
+		"concurrently": "^6.2.0"
 	},
 	"devDependencies": {
-		"husky": "^4.2.5"
+		"husky": "^7.0.0"
 	},
 	"husky": {
 		"hooks": {
