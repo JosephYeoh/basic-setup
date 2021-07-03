@@ -1,28 +1,29 @@
 {
-	"private": true,
-	"name": "basic-setup",
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"start": "concurrently \"yarn common gql -w\" \"yarn server start\"  \"yarn client start\"",
-		"server": "cd packages/server && yarn",
-		"client": "cd packages/client && yarn",
-		"common": "cd packages/common && yarn",
-		"tsc": "yarn common gql && yarn client tsc && yarn server tsc",
-		"format": "yarn client format && yarn server format",
-		"lint": "yarn client eslint && yarn server eslint",
-		"tidy": "yarn format && yarn lint && yarn tsc"
-	},
-	"dependencies": {
-		"concurrently": "^6.2.0"
-	},
-	"devDependencies": {
-		"husky": "^7.0.0"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn tidy"
-		}
-	}
+  "private": true,
+  "name": "basic-setup",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn common gql -w\" \"yarn server start\"  \"yarn client start\"",
+    "server": "cd packages/server && yarn",
+    "client": "cd packages/client && yarn",
+    "app": "cd packages/app && yarn",
+    "common": "cd packages/common && yarn",
+    "tsc": "yarn common gql && yarn client tsc && yarn server tsc",
+    "format": "yarn client format && yarn server format",
+    "lint": "yarn client eslint && yarn server eslint",
+    "tidy": "yarn format && yarn lint && yarn tsc"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn tidy"
+    }
+  }
 }
